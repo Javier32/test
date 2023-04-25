@@ -67,3 +67,11 @@ a {
   color: #333;
   text-decoration: none;
 }
+/*style added htmx */
+.htmx-settling img {
+  opacity: 0;
+}
+img {
+ transition: opacity 300ms ease-in;
+}
+
