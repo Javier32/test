@@ -1,8 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- This line needs to be checked
-    <meta name="csrf-token" content="{{ csrf_token() }}">-->
+    <!-- This line needs to be checked <meta name="csrf-token" content="{{ csrf_token() }}">
+This tag is used for implementing Cross-Site Request Forgery (CSRF) protection. The example above 
+is in the format of a Laravel Blade template, which generates a unique CSRF token for each request. 
+Other server-side frameworks may use different syntax for generating and inserting a CSRF token.
+
+<form action="/submit-form" method="post">
+This tag specifies the action and method for a form. When the user submits the form, 
+the data is sent to the specified URL via the specified HTTP method (POST in this case). 
+You should always specify the action and method for your forms to prevent attackers from modifying
+the URL or HTTP method to exploit vulnerabilities.
+
+
+    -->
 
     <meta charset="UTF-8">
     <title>My Secure Website</title>
